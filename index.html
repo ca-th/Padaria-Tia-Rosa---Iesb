@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padaria da Tia Rosa</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app-shell">
+        <header class="app-header"></header>
+
+        <main class="app-content">
+            <section id="home" class="screen active">
+                <div class="welcome-text-container">
+                    <p class="welcome-greeting">Bem-vindo(a)!</p>
+                    <h1 class="main-title">Padaria da Tia Rosa</h1>
+                    <p class="subtitle">Pães quentinhos e produtos frescos sem sair de casa.</p>
+                </div>
+            </section>
+
+           
+            <section id="cardapio" class="screen">
+                <h2 class="category-title">Pães</h2>
+                <div class="menu-item"><span>Pão Francês</span><span class="font-semibold text-gray-700">R$ 0,80/un</span></div>
+                <div class="menu-item"><span>Pão de Queijo</span><span class="font-semibold text-gray-700">R$ 2,50/un</span></div>
+                <div class="menu-item"><span>Pão Doce</span><span class="font-semibold text-gray-700">R$ 3,50/un</span></div>
+                <div class="menu-item"><span>Baguete com Gergelim</span><span class="font-semibold text-gray-700">R$ 8,00/un</span></div>
+                <div class="menu-item"><span>Misto Quente </span><span class="font-semibold text-gray-700">R$ 4,50</span></div>
+
+                <h2 class="category-title">Bolos</h2>
+                <div class="menu-item"><span>Bolo de Fubá com Goiabada</span><span class="font-semibold text-gray-700">R$ 20,00</span></div>
+                <div class="menu-item"><span>Bolo de Cenoura com Chocolate</span><span class="font-semibold text-gray-700">R$ 25,00</span></div>
+                <div class="menu-item"><span>Fatia de Torta Holandesa</span><span class="font-semibold text-gray-700">R$ 15,00</span></div>
+                
+                <h2 class="category-title">Salgados</h2>
+                <div class="menu-item"><span>Coxinha de Frango</span><span class="font-semibold text-gray-700">R$ 7,50</span></div>
+                <div class="menu-item"><span>Joelho de Queijo e Presunto</span><span class="font-semibold text-gray-700">R$ 8,00</span></div>
+                <div class="menu-item"><span>Esfiha de Carne</span><span class="font-semibold text-gray-700">R$ 7,50</span></div>
+                <div class="menu-item"><span>Enroladinho de Salsisha</span><span class="font-semibold text-gray-700">R$ 5,00</span></div>
+                <div class="menu-item"><span>Pastel de Carne / Queijo / Pizza</span><span class="font-semibold text-gray-700">R$ 8,00</span></div>
+                <div class="menu-item"><span>Esfiha de Carne</span><span class="font-semibold text-gray-700">R$ 7,50</span></div>
+               
+
+                <h2 class="category-title">Opções Vegetarianas</h2>
+                <div class="menu-item"><span>Quiche de Alho-poró</span><span class="font-semibold text-gray-700">R$ 9,00</span></div>
+                <div class="menu-item"><span>Torta de Palmito</span><span class="font-semibold text-gray-700">R$ 9,50</span></div>
+                <div class="menu-item"><span>Esfiha de Brócolis com Ricota</span><span class="font-semibold text-gray-700">R$ 7,50</span></div>
+
+                <h2 class="category-title">Bebidas</h2>
+                <div class="menu-item"><span>Café Espresso</span><span class="font-semibold text-gray-700">R$ 6,00</span></div>
+                <div class="menu-item"><span>Capuccino</span><span class="font-semibold text-gray-700">R$ 9,00</span></div>
+                <div class="menu-item"><span>Chocolate Quente Cremoso</span><span class="font-semibold text-gray-700">R$ 10,00</span></div>
+                <div class="menu-item"><span>Chá</span><span class="font-semibold text-gray-700">R$ 5,00</span></div>
+                <div class="menu-item"><span>Suco de Laranja (300ml)</span><span class="font-semibold text-gray-700">R$ 8,00</span></div>
+                <div class="menu-item"><span>Suco de Maracúja (300ml)</span><span class="font-semibold text-gray-700">R$ 8,50</span></div>
+            </section>
+
+            <section id="pedido" class="screen">
+                <h2 class="category-title">Faça seu Pedido</h2>
+                <form id="form-pedido">
+                    <div>
+                        <label for="nome" class="form-label">Seu Nome</label>
+                        <input type="text" id="nome" name="nome" class="form-input" required>
+                    </div>
+                    <div>
+                        <label for="whatsapp" class="form-label">Seu WhatsApp</label>
+                        <input type="tel" id="whatsapp" name="whatsapp" class="form-input" required>
+
+                    </div>
+                    <div>
+                        <label for="endereço" class="form-label">Seu Endereço</label>
+                        <input type="tex" id="endereço" name="endereço" class="form-input" required>
+                    <div>
+                        <label for="descricao-pedido" class="form-label">O que você deseja?</label>
+                        <textarea id="descricao-pedido" name="descricao-pedido" rows="4" class="form-input" placeholder="Ex: 2 pães franceses, 1 fatia de torta..." required></textarea>
+                    </div>
+                    <button type="submit" class="form-button">Enviar Pedido</button>
+                </form>
+            </section>
+
+            <section id="sobre" class="screen">
+                 <h2 class="category-title">Nossa Missão</h2>
+                 <p class="text-gray-600 mb-6">
+                    Na Padaria Tia Rosa, tradição e qualidade caminham juntas há anos. Agora, sob nova direção, estamos dando um passo à frente para tornar sua experiência ainda melhor. Sabemos que o tempo é precioso, então criamos este app para facilitar sua vida, reduzir filas e evitar deslocamentos desnecessários.Investir em tecnologia é a nossa forma de continuar oferecendo o que você mais gosta: produtos fresquinhos, atendimento de primeira e aquele sabor que só a Tia Rosa tem. Seja bem-vindo à nova era da nossa padaria: mais prática, mais próxima, mais feita pra você.
+
+
+
+                 </p>
+                 <div class="mt-4">
+                    <h3 class="font-semibold text-gray-800 mb-2">Contato e Endereço</h3>
+                    <p class="text-gray-600">Telefone: (61) 99111-8888</p>
+                    <p class="text-gray-600">Endereço: Rua das Flores, 123 - Bairro Feliz</p>
+                 </div>
+            </section>
+        </main>
+
+        <nav class="app-nav">
+            <button class="nav-button active" data-target="home"><i data-lucide="home"></i><span>Início</span></button>
+            <button class="nav-button" data-target="cardapio"><i data-lucide="book-open"></i><span>Cardápio</span></button>
+            <button class="nav-button" data-target="pedido"><i data-lucide="shopping-basket"></i><span>Pedido</span></button>
+            <button class="nav-button" data-target="sobre"><i data-lucide="info"></i><span>Sobre</span></button>
+        </nav>
+    </div>
+
+    <div id="confirmation-modal" class="modal-overlay">
+        <div class="modal-content">
+            <i data-lucide="check-circle" class="text-green-500 w-16 h-16 mx-auto mb-4"></i>
+            <h3 class="text-lg font-bold mb-2">Pedido Enviado!</h3>
+            <p class="text-gray-600 mb-4">Recebemos seu pedido e logo entraremos em contato.</p>
+            <button id="close-modal-btn" class="form-button">Fechar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
